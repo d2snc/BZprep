@@ -117,12 +117,12 @@ ASGI_APPLICATION = "SMS.asgi.application"
 # so consider using postgresql instead
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "bzprep$default",
-        "USER": "bzprep",
-        "PASSWORD": "Douglassilvareina123*",
-        "HOST": "bzprep.mysql.pythonanywhere-services.com",
-        "PORT": "3306",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": env("DB_NAME"),
+        "USER": env("DB_USER"),
+        "PASSWORD": env("DB_PASSWORD"),
+        "HOST": env("DB_HOST"),
+        "PORT": env("DB_PORT"),
     }
 }
 
@@ -183,8 +183,8 @@ EMAIL_HOST = (
 )
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'doug.sonic@gmail.com'
-EMAIL_HOST_PASSWORD = 'Douglassilvareina123*'
+EMAIL_HOST_USER = env("USER_EMAIL")
+EMAIL_HOST_PASSWORD = env("USER_PASSWORD")
 
 # crispy config
 CRISPY_TEMPLATE_PACK = "bootstrap4"
