@@ -183,8 +183,8 @@ EMAIL_HOST = (
 )
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = env("USER_EMAIL")
-EMAIL_HOST_PASSWORD = env("USER_PASSWORD")
+EMAIL_HOST_USER = 'doug.sonic@gmail.com'
+EMAIL_HOST_PASSWORD = 'Douglassilvareina123*'
 
 # crispy config
 CRISPY_TEMPLATE_PACK = "bootstrap4"
