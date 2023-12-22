@@ -117,12 +117,12 @@ ASGI_APPLICATION = "SMS.asgi.application"
 # so consider using postgresql instead
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": env("DB_NAME"),
-        "USER": env("DB_USER"),
-        "PASSWORD": env("DB_PASSWORD"),
-        "HOST": env("DB_HOST"),
-        "PORT": env("DB_PORT"),
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "bzprep$default",
+        "USER": "bzprep",
+        "PASSWORD": "Douglassilvareina123*",
+        "HOST": "bzprep.mysql.pythonanywhere-services.com",
+        "PORT": "3306",
     }
 }
 
